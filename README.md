@@ -7,8 +7,9 @@
 - Yarn start to init metro bundle.
 - Yarn ios/android to see the project in emulator.
 
-## Result
-![TaxDown](https://res.cloudinary.com/phector27/image/upload/v1655313147/TaxDownJunior_zmxhfe.gif)
+## Custom logo
+<img width="351" alt="image" src="https://user-images.githubusercontent.com/65594529/173893970-ab8285c7-1488-4bbd-a907-608612be97d8.png">
 
-## If there aren't content
-![TaxDownNoContent](https://res.cloudinary.com/phector27/image/upload/v1655313363/NoContent_qxaief.gif)
+
+## Result Android - iOS
+![TaxDown](https://user-images.githubusercontent.com/65594529/173893636-5e0510d3-2fa7-46d6-a045-fdf5dbf3f323.gif)
