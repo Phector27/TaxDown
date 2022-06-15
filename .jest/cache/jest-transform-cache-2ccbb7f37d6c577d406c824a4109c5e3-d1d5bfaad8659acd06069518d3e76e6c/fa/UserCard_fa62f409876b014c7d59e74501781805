@@ -1,0 +1,33 @@
+24d2e1f860519c1d6520e306c5f59f01
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+var _reactNative = require("react-native");
+
+var _reactNativeElements = require("react-native-elements");
+
+var _styles = require("./styles");
+
+var UserCard = function UserCard(_ref) {
+  var _user$Name, _user$Surname, _user$Age;
+
+  var user = _ref.user,
+      index = _ref.index;
+  return _react.default.createElement(_reactNative.View, {
+    style: _styles.styles.container
+  }, _react.default.createElement(_reactNativeElements.Text, {
+    style: _styles.styles.titleStyle
+  }, "Submission: ", index), _react.default.createElement(_reactNativeElements.Text, {
+    style: _styles.styles.textStyle
+  }, "Name: ", (_user$Name = user.Name) != null ? _user$Name : 'N/A', '\n', "Surname: ", (_user$Surname = user.Surname) != null ? _user$Surname : 'N/A', '\n', "Age: ", (_user$Age = user.Age) != null ? _user$Age : 'N/A'));
+};
+
+var _default = UserCard;
+exports.default = _default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJVc2VyQ2FyZCIsInVzZXIiLCJpbmRleCIsInN0eWxlcyIsImNvbnRhaW5lciIsInRpdGxlU3R5bGUiLCJ0ZXh0U3R5bGUiLCJOYW1lIiwiU3VybmFtZSIsIkFnZSJdLCJzb3VyY2VzIjpbIlVzZXJDYXJkLnRzeCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgeyBWaWV3LCB9IGZyb20gJ3JlYWN0LW5hdGl2ZSdcbmltcG9ydCB7IFRleHQgfSBmcm9tICdyZWFjdC1uYXRpdmUtZWxlbWVudHMnXG5pbXBvcnQgTm9Db250ZW50IGZyb20gJy4uL05vQ29udGVudC9Ob0NvbnRlbnQnXG5pbXBvcnQgeyBJVXNlckNhcmQgfSBmcm9tICcuL0ludGVyZmFjZXMnXG5pbXBvcnQgeyBzdHlsZXMgfSBmcm9tICcuL3N0eWxlcydcblxuY29uc3QgVXNlckNhcmQ6IFJlYWN0LkZ1bmN0aW9uQ29tcG9uZW50PElVc2VyQ2FyZD4gPSAoeyB1c2VyLCBpbmRleCB9KSA9PiB7XG4gIHJldHVybiAoXG4gICAgPFZpZXcgc3R5bGU9e3N0eWxlcy5jb250YWluZXJ9PlxuICAgICAgPFRleHQgc3R5bGU9e3N0eWxlcy50aXRsZVN0eWxlfT5TdWJtaXNzaW9uOiB7aW5kZXh9PC9UZXh0PlxuICAgICAgPFRleHQgc3R5bGU9e3N0eWxlcy50ZXh0U3R5bGV9PlxuICAgICAgICBOYW1lOiB7dXNlci5OYW1lID8/ICdOL0EnfVxuICAgICAgICB7J1xcbid9XG4gICAgICAgIFN1cm5hbWU6IHt1c2VyLlN1cm5hbWUgPz8gJ04vQSd9XG4gICAgICAgIHsnXFxuJ31cbiAgICAgICAgQWdlOiB7dXNlci5BZ2UgPz8gJ04vQSd9XG4gICAgICA8L1RleHQ+XG4gICAgPC9WaWV3PlxuICApXG59XG5cbmV4cG9ydCBkZWZhdWx0IFVzZXJDYXJkIl0sIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQUE7O0FBQ0E7O0FBQ0E7O0FBR0E7O0FBRUEsSUFBTUEsUUFBNEMsR0FBRyxTQUEvQ0EsUUFBK0MsT0FBcUI7RUFBQTs7RUFBQSxJQUFsQkMsSUFBa0IsUUFBbEJBLElBQWtCO0VBQUEsSUFBWkMsS0FBWSxRQUFaQSxLQUFZO0VBQ3hFLE9BQ0UsNkJBQUMsaUJBQUQ7SUFBTSxLQUFLLEVBQUVDLGNBQUEsQ0FBT0M7RUFBcEIsR0FDRSw2QkFBQyx5QkFBRDtJQUFNLEtBQUssRUFBRUQsY0FBQSxDQUFPRTtFQUFwQixtQkFBNkNILEtBQTdDLENBREYsRUFFRSw2QkFBQyx5QkFBRDtJQUFNLEtBQUssRUFBRUMsY0FBQSxDQUFPRztFQUFwQiwyQkFDU0wsSUFBSSxDQUFDTSxJQURkLHlCQUNzQixLQUR0QixFQUVHLElBRkgsZ0NBR1lOLElBQUksQ0FBQ08sT0FIakIsNEJBRzRCLEtBSDVCLEVBSUcsSUFKSCx3QkFLUVAsSUFBSSxDQUFDUSxHQUxiLHdCQUtvQixLQUxwQixDQUZGLENBREY7QUFZRCxDQWJEOztlQWVlVCxRIn0=

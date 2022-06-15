@@ -1,0 +1,71 @@
+807aded8473ec787759d3526c420113d
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.appSaga = appSaga;
+
+var _regenerator = _interopRequireDefault(require("@babel/runtime/regenerator"));
+
+var _effects = require("@redux-saga/core/effects");
+
+var _types = require("./types");
+
+var _dispatchers = require("./dispatchers");
+
+var _InputFields = _interopRequireDefault(require("../../api/json/InputFields.json"));
+
+var _marked = _regenerator.default.mark(appSaga),
+    _marked2 = _regenerator.default.mark(getInputData);
+
+function appSaga() {
+  return _regenerator.default.wrap(function appSaga$(_context) {
+    while (1) {
+      switch (_context.prev = _context.next) {
+        case 0:
+          _context.next = 2;
+          return (0, _effects.all)([(0, _effects.takeLatest)(_types.AppActionTypes.GET_INPUT_DATA, getInputData)]);
+
+        case 2:
+        case "end":
+          return _context.stop();
+      }
+    }
+  }, _marked);
+}
+
+function getInputData(action) {
+  var response;
+  return _regenerator.default.wrap(function getInputData$(_context2) {
+    while (1) {
+      switch (_context2.prev = _context2.next) {
+        case 0:
+          _context2.prev = 0;
+          _context2.next = 3;
+          return (0, _effects.call)(function () {
+            return _InputFields.default;
+          });
+
+        case 3:
+          response = _context2.sent;
+          _context2.next = 6;
+          return (0, _effects.put)((0, _dispatchers.getInputDataDispatchActionSuccess)(response.inputFields));
+
+        case 6:
+          _context2.next = 11;
+          break;
+
+        case 8:
+          _context2.prev = 8;
+          _context2.t0 = _context2["catch"](0);
+          console.log('Get Input Data Error: ', _context2.t0);
+
+        case 11:
+        case "end":
+          return _context2.stop();
+      }
+    }
+  }, _marked2, null, [[0, 8]]);
+}
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJhcHBTYWdhIiwiZ2V0SW5wdXREYXRhIiwiYWxsIiwidGFrZUxhdGVzdCIsIkFwcEFjdGlvblR5cGVzIiwiR0VUX0lOUFVUX0RBVEEiLCJhY3Rpb24iLCJjYWxsIiwiY3VzdG9tRGF0YSIsInJlc3BvbnNlIiwicHV0IiwiZ2V0SW5wdXREYXRhRGlzcGF0Y2hBY3Rpb25TdWNjZXNzIiwiaW5wdXRGaWVsZHMiLCJjb25zb2xlIiwibG9nIl0sInNvdXJjZXMiOlsic2FnYS50cyJdLCJzb3VyY2VzQ29udGVudCI6WyIvKiBlc2xpbnQtZGlzYWJsZSBAdHlwZXNjcmlwdC1lc2xpbnQvbm8tdW51c2VkLXZhcnMgKi9cbmltcG9ydCB7IGFsbCwgY2FsbCwgcHV0LCB0YWtlTGF0ZXN0IH0gZnJvbSAnQHJlZHV4LXNhZ2EvY29yZS9lZmZlY3RzJ1xuaW1wb3J0IHsgSUdldElucHV0RGF0YUFjdGlvbiB9IGZyb20gJy4vYWN0aW9ucydcbmltcG9ydCB7IEFwcEFjdGlvbnMsIEFwcEFjdGlvblR5cGVzIH0gZnJvbSAnLi90eXBlcydcbmltcG9ydCB7IGdldElucHV0RGF0YURpc3BhdGNoQWN0aW9uU3VjY2VzcyB9IGZyb20gJy4vZGlzcGF0Y2hlcnMnXG5pbXBvcnQgeyBEYXRhUmVzcG9uc2UgfSBmcm9tICcuLi8uLi9hcGkvdHlwZXMvYXBwJ1xuaW1wb3J0IGN1c3RvbURhdGEgZnJvbSAnLi4vLi4vYXBpL2pzb24vSW5wdXRGaWVsZHMuanNvbidcblxuXG4vKiogSW5pdGlhbCBTYWdhICoqL1xuZXhwb3J0IGZ1bmN0aW9uKiBhcHBTYWdhKCkge1xuICB5aWVsZCBhbGwoW1xuICAgIHRha2VMYXRlc3QoQXBwQWN0aW9uVHlwZXMuR0VUX0lOUFVUX0RBVEEsIGdldElucHV0RGF0YSlcbiAgXSlcbn1cblxuLyoqIFNhZ2EgZnVuY3Rpb25zICoqL1xuZnVuY3Rpb24qIGdldElucHV0RGF0YShhY3Rpb246IElHZXRJbnB1dERhdGFBY3Rpb24pIHtcbiAgdHJ5IHtcbiAgICBjb25zdCByZXNwb25zZTogRGF0YVJlc3BvbnNlLlJlc3BvbnNlID0geWllbGQgY2FsbCgoKSA9PiBjdXN0b21EYXRhKVxuXG4gICAgeWllbGQgcHV0PEFwcEFjdGlvbnM+KGdldElucHV0RGF0YURpc3BhdGNoQWN0aW9uU3VjY2VzcyhyZXNwb25zZS5pbnB1dEZpZWxkcykpXG5cbiAgfSBjYXRjaCAoZXJyb3IpIHsgY29uc29sZS5sb2coJ0dldCBJbnB1dCBEYXRhIEVycm9yOiAnLCBlcnJvcikgfVxufVxuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFDQTs7QUFFQTs7QUFDQTs7QUFFQTs7d0NBSWlCQSxPO3lDQU9QQyxZOztBQVBILFNBQVVELE9BQVY7RUFBQTtJQUFBO01BQUE7UUFBQTtVQUFBO1VBQ0wsT0FBTSxJQUFBRSxZQUFBLEVBQUksQ0FDUixJQUFBQyxtQkFBQSxFQUFXQyxxQkFBQSxDQUFlQyxjQUExQixFQUEwQ0osWUFBMUMsQ0FEUSxDQUFKLENBQU47O1FBREs7UUFBQTtVQUFBO01BQUE7SUFBQTtFQUFBO0FBQUE7O0FBT1AsU0FBVUEsWUFBVixDQUF1QkssTUFBdkI7RUFBQTtFQUFBO0lBQUE7TUFBQTtRQUFBO1VBQUE7VUFBQTtVQUU0QyxPQUFNLElBQUFDLGFBQUEsRUFBSztZQUFBLE9BQU1DLG9CQUFOO1VBQUEsQ0FBTCxDQUFOOztRQUY1QztVQUVVQyxRQUZWO1VBQUE7VUFJSSxPQUFNLElBQUFDLFlBQUEsRUFBZ0IsSUFBQUMsOENBQUEsRUFBa0NGLFFBQVEsQ0FBQ0csV0FBM0MsQ0FBaEIsQ0FBTjs7UUFKSjtVQUFBO1VBQUE7O1FBQUE7VUFBQTtVQUFBO1VBTW9CQyxPQUFPLENBQUNDLEdBQVIsQ0FBWSx3QkFBWjs7UUFOcEI7UUFBQTtVQUFBO01BQUE7SUFBQTtFQUFBO0FBQUEifQ==
