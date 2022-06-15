@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { View, Image, TouchableWithoutFeedback, Keyboard } from "react-native"
-import { styles } from "./styles"
 import Form from "../../common/Form/Form"
+import { styles } from "./styles"
 
 const HomeScreen: React.FunctionComponent = () => {
   const [isKeyboardVisible, setKeyboardVisible] = useState(false)
