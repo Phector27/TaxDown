@@ -1,11 +1,11 @@
 import React from "react"
 import { FlatList, View } from "react-native"
-import { styles } from "./styles"
 import { useSelector } from "react-redux"
 import { DefaultState } from "../../../store"
 import { DataResponse } from "../../../api/types/app"
-import NoContent from "../../common/NoContent/NoContent"
 import UserCard from "../../common/UserCard/UserCard"
+import NoContent from "../../common/NoContent/NoContent"
+import { styles } from "./styles"
 
 const SubsScreen: React.FunctionComponent = () => {
   const submissions = useSelector<DefaultState, DataResponse.Sumbmission[]>(state => state.app.submissions)

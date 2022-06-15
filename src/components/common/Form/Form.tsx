@@ -10,9 +10,9 @@ import {
 import { DefaultState } from "../../../store/index"
 import { DataResponse } from "../../../api/types/app"
 import { IFormData } from "./Interfaces"
+import { INavigation } from './Interfaces/index'
 import Loader from "../Loader/Loader"
 import { styles } from "./styles"
-import { INavigation } from './Interfaces/index';
 
 const Form: React.FunctionComponent = () => {
   const [userData, setUserData] = useState<IFormData | undefined>(undefined)

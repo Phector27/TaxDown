@@ -8,4 +8,7 @@
 - Yarn ios/android to see the project in emulator.
 
 ## Result
-![Marvel](https://user-images.githubusercontent.com/65594529/170466164-1e598345-3f16-4a88-80f0-29a02bf74cb2.gif)
+![TaxDown](https://res.cloudinary.com/phector27/image/upload/v1655313147/TaxDownJunior_zmxhfe.gif)
+
+## If there aren't content
+![TaxDownNoContent](https://res.cloudinary.com/phector27/image/upload/v1655313363/NoContent_qxaief.gif)
