@@ -5,7 +5,7 @@
 - Install cocoapods inside ios folder to iOS (in iOS folder -> pod install). Remember go back to up folder.
 - Set local.properties on Andriod if not set automatically with Android Studio.
 - Yarn start to init metro bundle.
-- Yarn ios/android to see the project in emulator.
+- Execute on terminal (project folder) `yarn ios` or `yarn android` to see the project in emulator.
 - Execute `yarn test` on terminal to test UserCard component
 
 ## Custom logo
