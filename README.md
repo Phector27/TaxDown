@@ -1,4 +1,4 @@
-# TaxDownJunior
+# TaxDown
 
 - Open terminal inside TaxDownJunior folder.
 - Execute `yarn` to add dependencies of package.json
